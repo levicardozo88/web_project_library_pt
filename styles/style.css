@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Cabeçalho ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.logo__text {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.logo__text strong {
+  color: #2f6fed;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.main-nav a {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  color: #2f6fed;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 3rem 4rem 5rem;
+}
+
+.hero__text {
+  max-width: 560px;
+}
+
+.hero__text h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text p {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.hero__image {
+  max-width: 620px;
+  width: 100%;
+  text-align: right;
+}
+
+.hero__image figcaption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ---------- Escolhas da Equipe ---------- */
+.picks {
+  position: relative;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.picks::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.picks__overlay {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.picks__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.picks__header h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.picks__header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.picks__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.book-card {
+  background: #fff;
+  color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.book-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.book-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.book-card__author {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.picks__credit {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+  .site-header,
+  .hero {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .hero__text h1 {
+    font-size: 2.4rem;
+  }
+
+  .picks__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}

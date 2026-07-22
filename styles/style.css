@@ -95,7 +95,7 @@ ul {
 }
 
 .header__image {
-  width: 636px;
+  max-width: 636px;
 }
 
 .header__footer {
@@ -201,11 +201,6 @@ ul {
 
   .header__content {
     flex-direction: column;
-  }
-
-  .header__image {
-    width: 100%;
-    max-width: 636px;
   }
 
   .staff__cards {

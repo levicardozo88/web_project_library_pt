@@ -1,0 +1,5 @@
+.DS_Store
+
+tmp/
+.codex-http-server.err.log
+.codex-http-server.out.log

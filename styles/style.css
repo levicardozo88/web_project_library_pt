@@ -32,7 +32,11 @@ ul {
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
   padding: 30px 80px 40px;
+  position: relative;
 }
 
 .nav {
@@ -64,10 +68,8 @@ ul {
 
 .header__content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-top: 80px;
+  flex-direction: column;
+  position: relative;
 }
 
 .header__title {
@@ -85,8 +87,11 @@ ul {
 }
 
 .header__image {
-  max-width: 620px;
-  width: 50%;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 636px;
+  object-fit: cover;
 }
 
 .header__address {
@@ -95,9 +100,16 @@ ul {
 }
 
 .header__footer {
+  margin-top: auto;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 0;
 }
 
 /* ---------- Escolhas da Equipe ---------- */
@@ -330,17 +342,12 @@ ul {
     padding-right: 1.5rem;
   }
 
-  .header__content {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 48px;
-  }
-
   .header__title {
     font-size: 2.4rem;
   }
 
   .header__image {
+    position: static;
     width: 100%;
   }
 

@@ -108,10 +108,6 @@ ul {
   box-sizing: border-box;
 }
 
-.content {
-  padding: 0;
-}
-
 /* ---------- Escolhas da Equipe ---------- */
 .picks {
   position: relative;

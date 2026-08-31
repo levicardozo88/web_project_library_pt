@@ -8,49 +8,52 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a href="/" class="logo">
-        <img src="images/logo.svg" alt="" class="logo__icon" />
-        <span class="logo__text">Biblioteca<br /><strong>Triple</strong></span>
-      </a>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Logotipo da Biblioteca Triple Peaks"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a href="#escolhas" class="nav__link">Escolhas da Equipe</a></li>
+            <li><a href="#eventos" class="nav__link">Eventos</a></li>
+            <li><a href="#membro" class="nav__link">Seja um membro</a></li>
+            <li><a href="#contatos" class="nav__link">Contatos</a></li>
+          </ul>
+        </nav>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#escolhas">Escolhas da Equipe</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#membro">Seja um membro</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero__text">
-          <h1>Bem-vindo à Biblioteca Triple Peaks</h1>
-          <p>
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+            <p class="header__description">
             Temos o prazer de abrir as portas da nossa biblioteca a todos!<br />
             Venha expandir seus conhecimentos de desenvolvimento, ou apenas use
             esse belo local para trabalhar ou estudar. Este é um lugar legal
             para estudantes legais!
-          </p>
+            </p>
+          </div>
+
+          <img
+            src="./images/inside_the_library.png"
+            alt="Ilustração de uma sala de biblioteca com mesa, plantas e estante de livros."
+            class="header__image"
+          />
         </div>
 
-        <figure class="hero__image">
-          <img
-            src="images/inside_the_library.png"
-            alt="Ilustração de uma sala de biblioteca com mesa, plantas e estante de livros."
-          />
-          <figcaption>Triple Peaks, 200 Success Avenue</figcaption>
-        </figure>
-      </section>
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
 
-      <section id="escolhas" class="picks">
-        <div class="picks__overlay">
-          <div class="picks__header">
-            <h2>Escolhas da Equipe</h2>
-            <p>Que nossos leitores adoram</p>
-          </div>
+      <main>
+        <section id="escolhas" class="picks">
+          <div class="picks__overlay">
+            <div class="picks__header">
+              <h2>Escolhas da Equipe</h2>
+              <p>Que nossos leitores adoram</p>
+            </div>
 
           <ul class="picks__list">
             <li class="book-card">
@@ -147,7 +150,7 @@
           <p class="events__description">
             Neste evento, que homenageia a pessoa que inspirou o nome da
             biblioteca, vamos ter uma palestra que vai nos levar para uma
-            jornada explorando alguns das pesquisadoras mais proeminentes no
+            jornada explorando algumas das pesquisadoras mais proeminentes no
             mundo da ciência espacial. É fácil aceitar o equívoco de que esse
             campo era em sua maioria dominado por homens, mas nossa palestra
             visa mudar essa noção e provar que esse não é o caso desde, pelo
@@ -209,6 +212,7 @@
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </div>
   </body>
 </html>

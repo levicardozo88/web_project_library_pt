@@ -88,9 +88,9 @@ ul {
 
 .header__image {
   position: absolute; /* Remove a imagem do fluxo normal do texto */
-  bottom: -230px; /* Posição vertical independente */
+  bottom: -238px; /* Posição vertical independente */
   right: 5px; /* Coloca a imagem no canto direito */
-  width: 628px; /* Largura exigida pelos testes */
+  width: 636px; /* Largura exigida pelos testes */
   object-fit: cover;
 }
 

@@ -71,6 +71,7 @@ ul {
   position: relative;
 }
 
+/* 2. O texto ocupa seu próprio espaço à esquerda */
 .header__title {
   max-width: 560px;
   font-size: 3.2rem;
@@ -80,16 +81,17 @@ ul {
 }
 
 .header__description {
-  max-width: 560px;
+  max-width: 560px; /* Trava a largura para o texto não invadir a área da imagem */
   font-size: 1.05rem;
   color: #333;
 }
 
+/* 3. A imagem é desvinculada do texto e fixada à direita */
 .header__image {
-  position: absolute;
-  bottom: -230px;
-  right: 5px;
-  width: 628px;
+  position: absolute; /* Remove a imagem do fluxo normal do texto */
+  bottom: -230px; /* Posição vertical independente */
+  right: 5px; /* Coloca a imagem no canto direito */
+  width: 628px; /* Largura exigida pelos testes */
   object-fit: cover;
 }
 
@@ -193,7 +195,7 @@ ul {
   padding: 100px 60px 120px;
 }
 
-.events_content {
+.events__content {
   flex-basis: 580px;
   flex-shrink: 0;
 }
@@ -258,8 +260,7 @@ ul {
   color: #1f69c9;
 }
 
-/* Container de fotos da seção de eventos */
-.events_cover {
+.events__cover {
   position: relative;
   flex-grow: 1;
   flex-shrink: 0;
@@ -267,12 +268,11 @@ ul {
   min-height: 500px;
 }
 
-.events_image {
+.events__image {
   width: 100%;
   display: block;
 }
 
-/* Bloco de pessoa (posicionamento absoluto em relação a .events_cover) */
 .person {
   position: absolute;
   display: flex;
@@ -280,7 +280,6 @@ ul {
   flex-direction: column;
 }
 
-/* Posicionamentos tirados do briefing */
 .person_name_feynman {
   top: -30px;
   left: 319px;
@@ -306,23 +305,23 @@ ul {
   right: 216px;
 }
 
-.person_image {
+.person__image {
   max-width: 100%;
 }
 
-.person_image_size_l {
+.person__image_size_l {
   width: 140px;
 }
 
-.person_image_size_m {
+.person__image_size_m {
   width: 100px;
 }
 
-.person_image_size_s {
+.person__image_size_s {
   width: 80px;
 }
 
-.person_caption {
+.person__caption {
   display: inline-block;
   text-align: center;
   font-size: 14px;
@@ -355,11 +354,11 @@ ul {
     gap: 48px;
   }
 
-  .events_content {
+  .events__content {
     flex-basis: auto;
   }
 
-  .events_cover {
+  .events__cover {
     width: 100%;
     min-height: 320px;
     flex-basis: auto;

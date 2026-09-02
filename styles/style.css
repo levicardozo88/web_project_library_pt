@@ -66,12 +66,10 @@ ul {
   color: #2f6fed;
 }
 
-/* 1. O container pai vira a referência de posicionamento */
 .header__content {
   position: relative;
 }
 
-/* 2. O texto ocupa seu próprio espaço à esquerda */
 .header__title {
   max-width: 560px;
   font-size: 3.2rem;
@@ -81,16 +79,16 @@ ul {
 }
 
 .header__description {
-  max-width: 560px; /* Trava a largura para o texto não invadir a área da imagem */
+  max-width: 560px;
   font-size: 1.05rem;
   color: #333;
 }
 
 .header__image {
-  position: absolute; /* Remove a imagem do fluxo normal do texto */
-  bottom: -238px; /* Posição vertical independente */
-  right: 5px; /* Coloca a imagem no canto direito */
-  width: 636px; /* Largura exigida pelos testes */
+  position: absolute;
+  bottom: -238px;
+  right: 5px;
+  width: 636px;
   object-fit: cover;
 }
 

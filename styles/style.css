@@ -86,7 +86,6 @@ ul {
   color: #333;
 }
 
-/* 3. A imagem é desvinculada do texto e fixada à direita */
 .header__image {
   position: absolute; /* Remove a imagem do fluxo normal do texto */
   bottom: -230px; /* Posição vertical independente */

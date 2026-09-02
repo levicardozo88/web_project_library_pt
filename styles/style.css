@@ -66,9 +66,8 @@ ul {
   color: #2f6fed;
 }
 
+/* 1. O container pai vira a referência de posicionamento */
 .header__content {
-  display: flex;
-  flex-direction: column;
   position: relative;
 }
 
@@ -88,9 +87,9 @@ ul {
 
 .header__image {
   position: absolute;
-  top: 124px;
+  bottom: -230px;
   right: 5px;
-  width: 636px;
+  width: 628px;
   object-fit: cover;
 }
 
@@ -108,8 +107,8 @@ ul {
   box-sizing: border-box;
 }
 
-/* ---------- Escolhas da Equipe ---------- */
-.picks {
+/* ---------- Escolhas da Equipe (Staff) ---------- */
+.staff {
   position: relative;
   background-image: url("../images/staff_picks_background.jpg");
   background-size: cover;
@@ -117,14 +116,14 @@ ul {
   padding: 5rem 0;
 }
 
-.picks::before {
+.staff::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
 }
 
-.picks__overlay {
+.staff__overlay {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
@@ -132,23 +131,23 @@ ul {
   color: #fff;
 }
 
-.picks__header {
+.staff__header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.picks__header h2 {
+.staff__header h2 {
   font-size: 2.75rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
-.picks__header p {
+.staff__header p {
   font-size: 1.1rem;
   opacity: 0.9;
 }
 
-.picks__list {
+.staff__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -178,7 +177,7 @@ ul {
   margin-bottom: 0;
 }
 
-.picks__credit {
+.staff__credit {
   margin-top: 2rem;
   font-size: 0.8rem;
   opacity: 0.85;
@@ -194,7 +193,7 @@ ul {
   padding: 100px 60px 120px;
 }
 
-.events__content {
+.events_content {
   flex-basis: 580px;
   flex-shrink: 0;
 }
@@ -259,7 +258,8 @@ ul {
   color: #1f69c9;
 }
 
-.events__cover {
+/* Container de fotos da seção de eventos */
+.events_cover {
   position: relative;
   flex-grow: 1;
   flex-shrink: 0;
@@ -267,67 +267,66 @@ ul {
   min-height: 500px;
 }
 
-.events__image {
-  max-width: 100%;
+.events_image {
+  width: 100%;
+  display: block;
 }
 
+/* Bloco de pessoa (posicionamento absoluto em relação a .events_cover) */
 .person {
   position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
 }
 
+/* Posicionamentos tirados do briefing */
 .person_name_feynman {
-  top: 15px;
-  left: 510px;
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_tarter {
-  top: 175px;
-  left: 270px;
+  top: 79px;
+  left: 159px;
 }
 
 .person_name_burbidge {
-  top: 200px;
-  right: 230px;
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_mitchell {
-  bottom: 160px;
-  left: 255px;
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_cannon {
-  right: 350px;
-  bottom: 80px;
+  bottom: 18px;
+  right: 216px;
 }
 
-.person__image {
+.person_image {
   max-width: 100%;
 }
 
-.person__image_size_l {
+.person_image_size_l {
   width: 140px;
 }
 
-.person__image_size_m {
+.person_image_size_m {
   width: 100px;
 }
 
-.person__image_size_s {
+.person_image_size_s {
   width: 80px;
 }
 
-.person__caption {
+.person_caption {
   display: inline-block;
   text-align: center;
   font-size: 14px;
-}
-
-.person__caption p {
-  margin: 8px 0 0;
+  margin: 0;
 }
 
 /* ---------- Responsivo ---------- */
@@ -347,7 +346,7 @@ ul {
     width: 100%;
   }
 
-  .picks__list {
+  .staff__list {
     grid-template-columns: 1fr;
   }
 
@@ -356,11 +355,11 @@ ul {
     gap: 48px;
   }
 
-  .events__content {
+  .events_content {
     flex-basis: auto;
   }
 
-  .events__cover {
+  .events_cover {
     width: 100%;
     min-height: 320px;
     flex-basis: auto;

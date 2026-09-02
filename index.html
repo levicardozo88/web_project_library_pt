@@ -50,14 +50,15 @@
       </header>
 
       <main>
-        <section id="escolhas" class="picks">
-          <div class="picks__overlay">
-            <div class="picks__header">
+        <!-- Seção 1: Staff / Escolhas da Equipe (necessário manter class="staff") -->
+        <section id="escolhas" class="staff">
+          <div class="staff__overlay">
+            <div class="staff__header">
               <h2>Escolhas da Equipe</h2>
               <p>Que nossos leitores adoram</p>
             </div>
 
-            <ul class="picks__list">
+            <ul class="staff__list">
               <li class="book-card">
                 <h3>Algoritmos: Teoria e Prática</h3>
                 <p>
@@ -116,16 +117,17 @@
                   Manual Prático de Construção de Software. Ele abrange de forma
                   geral tudo relacionado a uma boa estrutura de código.
                 </p>
-                <p class="book-card__author">Robert C. Martin</p>
+                <p class="book-card__author">Steve McConnell</p>
               </li>
             </ul>
 
-            <p class="picks__credit">Photo by Michelle Tan on Unsplash</p>
+            <p class="staff__credit">Photo by Michelle Tan on Unsplash</p>
           </div>
         </section>
 
+        <!-- Seção 2: Eventos -->
         <section id="eventos" class="events">
-          <div class="events__content">
+          <div class="events_content">
             <h2 class="events__heading">Próximos eventos:</h2>
             <h3 class="events__title">
               Em homenagem à Joan Feynman: Mulheres na Astrofísica
@@ -147,72 +149,79 @@
                   class="event-info__icon"
                 />
                 <p class="event-info__text">
-                  Sala de Conferências da Biblioteca Triple Peaks e Online
+                  Sala de Conferências da Biblioteca Triple Peaks
                 </p>
               </div>
             </div>
+
             <p class="events__description">
-              Neste evento, que homenageia a pessoa que inspirou o nome da
-              biblioteca, vamos ter uma palestra que vai nos levar para uma
-              jornada explorando algumas das pesquisadoras mais proeminentes no
-              mundo da ciência espacial. É fácil aceitar o equívoco de que esse
-              campo era em sua maioria dominado por homens, mas nossa palestra
-              visa mudar essa noção e provar que esse não é o caso desde, pelo
-              menos, o século XVIII.
+              Nesse evento, que homenageia o homônimo da biblioteca, nossa
+              palestrante convidada nos levará a uma jornada explorando algumas
+              das mais proeminentes pesquisadoras do mundo da ciência espacial.
+              É fácil acreditar na ideia equivocada de que esse campo era
+              dominado principalmente por homens, mas nossa palestra tem como
+              objetivo mudar essa visão e provar que isso não acontece desde
+              pelo menos o século XVIII.
             </p>
-            <a href="#" class="events__more">Mais eventos</a>
+
+            <a href="#" class="events__more">Mais eventos &rarr;</a>
           </div>
 
-          <div class="events__cover">
+          <div class="events_cover">
             <img
               src="./images/cafe.png"
-              alt="Ilustração de uma cafeteria dentro da Biblioteca Triple Peaks"
-              class="events__image"
+              alt="Ilustração da cafeteria"
+              class="events_image"
             />
 
+            <!-- Joan Feynman (Texto antes da imagem) -->
             <div class="person person_name_feynman">
-              <p class="person__caption">Joan Feynman</p>
+              <p class="person_caption">Joan Feynman</p>
               <img
                 src="./images/person_feynman.png"
-                alt="Rosto de Joan Feynman"
-                class="person__image person__image_size_l"
+                alt="Joan Feynman"
+                class="person_image person_image_size_l"
               />
             </div>
 
+            <!-- Jill Tarter (Texto antes da imagem) -->
             <div class="person person_name_tarter">
-              <p class="person__caption">Jill Tarter</p>
+              <p class="person_caption">Jill Tarter</p>
               <img
                 src="./images/person_tarter.png"
-                alt="Rosto de Jill Tarter"
-                class="person__image person__image_size_m"
+                alt="Jill Tarter"
+                class="person_image person_image_size_m"
               />
             </div>
 
+            <!-- Margaret Burbidge (Texto antes da imagem) -->
             <div class="person person_name_burbidge">
-              <p class="person__caption">Margaret Burbidge</p>
+              <p class="person_caption">Margaret Burbidge</p>
               <img
                 src="./images/person_burbidge.png"
-                alt="Rosto de Margaret Burbidge"
-                class="person__image person__image_size_m"
+                alt="Margaret Burbidge"
+                class="person_image person_image_size_m"
               />
             </div>
 
+            <!-- Maria Mitchell (Imagem antes do texto) -->
             <div class="person person_name_mitchell">
               <img
                 src="./images/person_mitchell.png"
-                alt="Rosto de Maria Mitchell"
-                class="person__image person__image_size_s"
+                alt="Maria Mitchell"
+                class="person_image person_image_size_s"
               />
-              <p class="person__caption">Maria Mitchell</p>
+              <p class="person_caption">Maria Mitchell</p>
             </div>
 
+            <!-- Annie Jump Cannon (Imagem antes do texto) -->
             <div class="person person_name_cannon">
               <img
                 src="./images/person_cannon.png"
-                alt="Rosto de Annie Jump Cannon"
-                class="person__image person__image_size_m"
+                alt="Annie Jump Cannon"
+                class="person_image person_image_size_m"
               />
-              <p class="person__caption">Annie Jump Cannon</p>
+              <p class="person_caption">Annie Jump Cannon</p>
             </div>
           </div>
         </section>

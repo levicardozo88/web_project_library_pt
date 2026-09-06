@@ -25,7 +25,6 @@ ul {
   list-style: none;
 }
 
-/* ---------- Cabeçalho ---------- */
 .page {
   min-width: 320px;
   min-height: 100vh;
@@ -88,7 +87,7 @@ ul {
   position: absolute;
   bottom: -238px;
   right: 5px;
-  width: 628px;
+  width: 608px;
   object-fit: cover;
 }
 
@@ -106,7 +105,6 @@ ul {
   box-sizing: border-box;
 }
 
-/* ---------- Escolhas da Equipe (Staff) ---------- */
 .staff {
   position: relative;
   background-image: url("../images/staff_picks_background.jpg");
@@ -182,7 +180,6 @@ ul {
   opacity: 0.85;
 }
 
-/* ---------- Eventos ---------- */
 .events {
   display: flex;
   align-items: flex-start;
@@ -325,7 +322,6 @@ ul {
   margin: 0;
 }
 
-/* ---------- Responsivo ---------- */
 @media (max-width: 900px) {
   .header,
   .events {

@@ -26,7 +26,9 @@ ul {
 }
 
 .page {
-  min-width: 320px;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
   min-height: 100vh;
 }
 
@@ -42,7 +44,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
 }
 
 .nav__logo {
@@ -52,7 +53,7 @@ ul {
 
 .nav__links {
   display: flex;
-  gap: 2.5rem;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -66,6 +67,9 @@ ul {
 }
 
 .header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -84,11 +88,7 @@ ul {
 }
 
 .header__image {
-  position: absolute;
-  bottom: -238px;
-  right: 5px;
-  width: 608px;
-  object-fit: cover;
+  max-width: 608px;
 }
 
 .header__address {

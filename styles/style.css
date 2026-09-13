@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #1a1a1a;
   line-height: 1.6;
   overflow-x: hidden;
@@ -26,11 +26,11 @@ ul {
 }
 
 .page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
+  min-width: 320px;
   min-height: 100vh;
 }
+
+/* HEADER */
 
 .header {
   display: flex;
@@ -44,6 +44,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .nav__logo {
@@ -53,7 +54,7 @@ ul {
 
 .nav__links {
   display: flex;
-  column-gap: 20px;
+  gap: 2.5rem;
 }
 
 .nav__link {
@@ -67,9 +68,6 @@ ul {
 }
 
 .header__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
 }
 
@@ -88,7 +86,11 @@ ul {
 }
 
 .header__image {
-  max-width: 636px;
+  position: absolute;
+  bottom: -238px;
+  right: 5px;
+  width: 636px;
+  object-fit: cover;
 }
 
 .header__address {
@@ -102,8 +104,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  box-sizing: border-box;
 }
+
+/* STAFF */
 
 .staff {
   position: relative;
@@ -133,42 +136,48 @@ ul {
   margin-bottom: 3rem;
 }
 
-.staff__header h2 {
+.staff__title {
   font-size: 2.75rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
-.staff__header p {
+.staff__subtitle {
   font-size: 1.1rem;
   opacity: 0.9;
 }
 
-.staff__list {
+.staff__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-.book-card {
+/* CARD */
+
+.card {
   background: #fff;
   color: #1a1a1a;
   padding: 2rem;
   border-radius: 4px;
 }
 
-.book-card h3 {
+.card__content {
+  display: block;
+}
+
+.card__title {
   font-size: 1.15rem;
   margin-bottom: 1rem;
 }
 
-.book-card p {
+.card__text {
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 1.5rem;
 }
 
-.book-card__author {
+.card__footer {
   font-size: 0.85rem;
   color: #666;
   margin-bottom: 0;
@@ -179,6 +188,8 @@ ul {
   font-size: 0.8rem;
   opacity: 0.85;
 }
+
+/* EVENTS */
 
 .events {
   display: flex;
@@ -259,13 +270,15 @@ ul {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
-  max-width: 780px;
+  min-height: 780px;
 }
 
 .events__image {
   width: 100%;
   display: block;
 }
+
+/* PERSON */
 
 .person {
   position: absolute;
@@ -304,22 +317,25 @@ ul {
 }
 
 .person__image_size_l {
-  width: 140px;
+  width: 159px;
 }
 
 .person__image_size_m {
-  width: 100px;
+  width: 125px;
 }
 
 .person__image_size_s {
-  width: 80px;
+  width: 96px;
 }
 
 .person__caption {
+  display: inline-block;
   text-align: center;
   font-size: 14px;
   margin: 0;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .header,
@@ -337,7 +353,7 @@ ul {
     width: 100%;
   }
 
-  .staff__list {
+  .staff__cards {
     grid-template-columns: 1fr;
   }
 

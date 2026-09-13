@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <div class="page">
       <header class="header">
@@ -16,19 +17,30 @@
             alt="Logotipo da Biblioteca Triple Peaks"
             class="nav__logo"
           />
+
           <ul class="nav__links">
             <li>
-              <a href="#escolhas" class="nav__link">Escolhas da Equipe</a>
+              <a href="#staff" class="nav__link">Escolhas da Equipe</a>
             </li>
-            <li><a href="#eventos" class="nav__link">Eventos</a></li>
-            <li><a href="#membro" class="nav__link">Seja um membro</a></li>
-            <li><a href="#contatos" class="nav__link">Contatos</a></li>
+
+            <li>
+              <a href="#events" class="nav__link">Eventos</a>
+            </li>
+
+            <li>
+              <a href="#membro" class="nav__link">Seja um membro</a>
+            </li>
+
+            <li>
+              <a href="#contatos" class="nav__link">Contatos</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header__content">
           <div>
             <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+
             <p class="header__description">
               Temos o prazer de abrir as portas da nossa biblioteca a todos!<br />
               Venha expandir seus conhecimentos de desenvolvimento, ou apenas
@@ -50,73 +62,93 @@
       </header>
 
       <main>
-        <section id="escolhas" class="staff">
+        <!-- STAFF -->
+        <section id="staff" class="staff">
           <div class="staff__overlay">
             <div class="staff__header">
-              <h2>Escolhas da Equipe</h2>
-              <p>Que nossos leitores adoram</p>
+              <h2 class="staff__title">Escolhas da Equipe</h2>
+
+              <p class="staff__subtitle">Que nossos leitores adoram</p>
             </div>
 
-            <ul class="staff__list">
-              <li class="book-card">
-                <h3>Algoritmos: Teoria e Prática</h3>
-                <p>
-                  O nome deste livro é autoexplicativo; é uma introdução
-                  adequada aos algoritmos! Introdução aos algoritmos, ou CLRS,
-                  em referência aos sobrenomes dos autores, é aprofundada e
-                  abrange uma variedade de algoritmos em vários capítulos
-                  independentes.
-                </p>
-                <p class="book-card__author">
+            <ul class="staff__cards">
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">Algoritmos: Teoria e Prática</h3>
+
+                  <p class="card__text">
+                    O nome deste livro é autoexplicativo; é uma introdução
+                    adequada aos algoritmos! Introdução aos algoritmos, ou CLRS,
+                    em referência aos sobrenomes dos autores, é aprofundada e
+                    abrange uma variedade de algoritmos em vários capítulos
+                    independentes.
+                  </p>
+                </div>
+
+                <p class="card__footer">
                   Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
                   Clifford Stein
                 </p>
               </li>
 
-              <li class="book-card">
-                <h3>
-                  A Estrutura e Interpretação de Programas de Computador (sigla
-                  em inglês, SICP)
-                </h3>
-                <p>
-                  Esse é um dos melhores livros para aprender os fundamentos da
-                  programação. Apresentado pelo MIT em um de seus cursos básicos
-                  de programação, o SICP é um livro de programação de uso geral
-                  que usa Esquema para ilustrar vários conceitos de programação.
-                </p>
-                <p class="book-card__author">
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    A Estrutura e Interpretação de Programas de Computador
+                    (sigla em inglês, SICP)
+                  </h3>
+
+                  <p class="card__text">
+                    Esse é um dos melhores livros para aprender os fundamentos
+                    da programação. Apresentado pelo MIT em um de seus cursos
+                    básicos de programação, o SICP é um livro de programação de
+                    uso geral que usa Esquema para ilustrar vários conceitos de
+                    programação.
+                  </p>
+                </div>
+
+                <p class="card__footer">
                   Harold Abelson, Gerald Jay Sussman, Julie Sussman
                 </p>
               </li>
 
-              <li class="book-card">
-                <h3>
-                  O Codificador Limpo: Um Código de Conduta para Programadores
-                  Profissionais
-                </h3>
-                <p>
-                  Compilado pelo experiente engenheiro de software e autor
-                  Robert C. Martin (também conhecido como Tio Bob), este livro
-                  aborda as técnicas e ferramentas do verdadeiro artesanato de
-                  software. Ele explica como escrever um código limpo e
-                  demonstra como cultivar a atitude de um programador
-                  profissional qualificado.
-                </p>
-                <p class="book-card__author">Steve McConnell</p>
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    O Codificador Limpo: Um Código de Conduta para Programadores
+                    Profissionais
+                  </h3>
+
+                  <p class="card__text">
+                    Compilado pelo experiente engenheiro de software e autor
+                    Robert C. Martin (também conhecido como Tio Bob), este livro
+                    aborda as técnicas e ferramentas do verdadeiro artesanato de
+                    software. Ele explica como escrever um código limpo e
+                    demonstra como cultivar a atitude de um programador
+                    profissional qualificado.
+                  </p>
+                </div>
+
+                <p class="card__footer">Steve McConnell</p>
               </li>
 
-              <li class="book-card">
-                <h3>
-                  Code Complete: Um Manual Prático de Construção de Software
-                </h3>
-                <p>
-                  Quer saber como escrever um código robusto, independentemente
-                  da arquitetura por trás da linguagem de programação escolhida?
-                  Em seguida, considere a leitura do livro: Code Complete: Um
-                  Manual Prático de Construção de Software. Ele abrange de forma
-                  geral tudo relacionado a uma boa estrutura de código.
-                </p>
-                <p class="book-card__author">Steve McConnell</p>
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    Code Complete: Um Manual Prático de Construção de Software
+                  </h3>
+
+                  <p class="card__text">
+                    Quer saber como escrever um código robusto,
+                    independentemente da arquitetura por trás da linguagem de
+                    programação escolhida? Em seguida, considere a leitura do
+                    livro: Code Complete: Um Manual Prático de Construção de
+                    Software. Ele abrange de forma geral tudo relacionado a uma
+                    boa estrutura de código.
+                  </p>
+                </div>
+
+                <p class="card__footer">Steve McConnell</p>
               </li>
             </ul>
 
@@ -124,9 +156,11 @@
           </div>
         </section>
 
-        <section id="eventos" class="events">
+        <!-- EVENTS -->
+        <section id="events" class="events">
           <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
+
             <h3 class="events__title">
               Em homenagem à Joan Feynman: Mulheres na Astrofísica
             </h3>
@@ -138,14 +172,17 @@
                   alt="Calendar icon"
                   class="event-info__icon"
                 />
+
                 <p class="event-info__text">Segunda-feira, 12 de janeiro</p>
               </div>
+
               <div class="event-info__item">
                 <img
                   src="./images/icon_pin.svg"
                   alt="Pin icon"
                   class="event-info__icon"
                 />
+
                 <p class="event-info__text">
                   Sala de Conferências da Biblioteca Triple Peaks
                 </p>
@@ -162,7 +199,7 @@
               pelo menos o século XVIII.
             </p>
 
-            <a href="#" class="events__more">Mais eventos</a>
+            <a href="#" class="events__more"> Mais eventos </a>
           </div>
 
           <div class="events__cover">
@@ -174,6 +211,7 @@
 
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
+
               <img
                 src="./images/person_feynman.png"
                 alt="Joan Feynman"
@@ -183,6 +221,7 @@
 
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
+
               <img
                 src="./images/person_tarter.png"
                 alt="Jill Tarter"
@@ -192,6 +231,7 @@
 
             <div class="person person_name_burbidge">
               <p class="person__caption">Margaret Burbidge</p>
+
               <img
                 src="./images/person_burbidge.png"
                 alt="Margaret Burbidge"
@@ -205,6 +245,7 @@
                 alt="Maria Mitchell"
                 class="person__image person__image_size_s"
               />
+
               <p class="person__caption">Maria Mitchell</p>
             </div>
 
@@ -214,6 +255,7 @@
                 alt="Annie Jump Cannon"
                 class="person__image person__image_size_m"
               />
+
               <p class="person__caption">Annie Jump Cannon</p>
             </div>
           </div>
